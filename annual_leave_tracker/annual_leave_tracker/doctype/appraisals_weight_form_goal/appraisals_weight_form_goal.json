@@ -1,0 +1,50 @@
+{
+ "actions": [],
+ "creation": "2021-11-06 19:34:34.580670",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "awts_area",
+  "score",
+  "awts_weight"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "awts_area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area",
+   "read_only": 1
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "default": "-",
+   "fieldname": "awts_weight",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Weight (%)",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-06 19:40:42.866465",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Appraisals Weight Form Goal",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

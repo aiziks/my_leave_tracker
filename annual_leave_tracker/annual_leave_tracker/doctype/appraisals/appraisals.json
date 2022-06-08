@@ -1,0 +1,625 @@
+{
+ "actions": [],
+ "autoname": "format:{employee_number}-{MM}-Appraisal-Form.{##}",
+ "creation": "2021-11-06 19:42:58.189815",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_details",
+  "naming_series",
+  "employee",
+  "employee_name",
+  "employee_number",
+  "status",
+  "column_break0",
+  "start_date",
+  "end_date",
+  "stage",
+  "department",
+  "template",
+  "branch",
+  "supervisor_information",
+  "lm1",
+  "column_break_13",
+  "lm2",
+  "instructions",
+  "html_16",
+  "section_break_17",
+  "table_18",
+  "section_break_19",
+  "appraisees_total_score_perf",
+  "column_break_21",
+  "appraisers_total_score_perf",
+  "appraisers_total_score_perf_total_weight",
+  "section_break_25",
+  "appraisals_template",
+  "goals_section",
+  "form_goal1",
+  "section_break_29",
+  "appraisees_total_score1",
+  "column_break_31",
+  "appraisers_total_score1",
+  "appraisers_total_score_total_wei1",
+  "section_break_34",
+  "performance_section",
+  "form_goal",
+  "section_break_28",
+  "appraisees_total_score",
+  "column_break_29",
+  "appraisers_total_score",
+  "appraisers_total_score_total_wei",
+  "section_break0",
+  "tab_competence",
+  "section_break_45",
+  "appraisees_total_score_comp",
+  "column_break_36",
+  "appraisers_total_score_comp",
+  "appraisers_total_score_comp_total_weight",
+  "section_break1",
+  "tab_capacity",
+  "section_break_40",
+  "appraisess_total_score_capa",
+  "column_break_42",
+  "appraisers_total_score_capa",
+  "appraisers_total_score_capa_total_weight",
+  "section_break_46",
+  "overall_score",
+  "grade",
+  "column_break_48",
+  "overal_score_in_percentage",
+  "column_break_50",
+  "summary_rating_section",
+  "table_52",
+  "overall_assessment_section",
+  "summary_of_strength",
+  "summary_of_areas_of_improvement",
+  "training_needs",
+  "appraisee_comment",
+  "appraiser_comment",
+  "review_with_staff_section",
+  "appraisal_select",
+  "appraisee_rejection_reason",
+  "recommendations_section",
+  "table_62",
+  "column_break_56",
+  "company",
+  "reporting_manager_email",
+  "notification_sent",
+  "appraisee_category"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_details",
+   "fieldtype": "Section Break",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "default": "APPRAISAL/.YY./.MM.##",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Series",
+   "no_copy": 1,
+   "options": "HR-APR-.YY.-.MM.\nAPPRAISAL/.YY./.MM.##",
+   "print_hide": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "For Employee",
+   "options": "Employee",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Name",
+   "oldfieldname": "employee_name",
+   "oldfieldtype": "Data",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "employee_number",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "in_standard_filter": 1,
+   "label": "Employee Number",
+   "read_only": 1,
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "no_copy": 1,
+   "oldfieldname": "status",
+   "oldfieldtype": "Select",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break0",
+   "fieldtype": "Column Break",
+   "in_standard_filter": 1,
+   "oldfieldtype": "Column Break",
+   "width": "50%"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "oldfieldname": "start_date",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "depends_on": "start_date",
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date",
+   "oldfieldname": "end_date",
+   "oldfieldtype": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "stage",
+   "fieldtype": "Data",
+   "label": "Stage",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Department",
+   "options": "Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "supervisor_information",
+   "fieldtype": "Section Break",
+   "label": "Supervisor Information"
+  },
+  {
+   "fieldname": "lm1",
+   "fieldtype": "Data",
+   "label": "Supervisors Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.second_level_supervisor",
+   "fieldname": "lm2",
+   "fieldtype": "Data",
+   "label": "Second Supervisors Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "instructions",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "html_16",
+   "fieldtype": "HTML",
+   "options": "\n\n\n    <meta charset=\"UTF-8\">\n    <title>Title</title>\n\n    <style>\n\n            .containerr{\n            background: white;\n            border: black solid 2px;\n\n        }\n        .headerr{\n            background: #171AB9;\n            border: black solid 2px;\n            color: white;\n\n        }\n.headerr &gt; h1{\n            margin: 0 !important;\n\t\t\tfont-size: 15px;\n        }\n        .titlee{\n           border-bottom: black solid 2px;\n            margin: 0;\n\n\n\n        }\n\n        .content &gt; table thead tr td {\n            border-right: black solid 2px;\n\n        }\n.content &gt; table thead tr td h2 {\n            margin: 0 !important;\n\t\t\tfont-size: 15px;\n        }\t\n\t.content &gt; table thead tr td p {\n           font-size: 14px;\n            margin: 0;\n        }\n.headerr_content{\n    padding-left: 5em;\n}\n        .headerr_content &gt; h1{\n            margin: 0 !important;\n\t\t\tfont-size: 15px;\n        }\n\t\t.headerr_content &gt; h2{\n            margin: 0 !important;\n\t\t\tfont-size: 15px;\n        }\n        .headerr_content &gt; p{\n            font-size: 14px;\n            margin: 0;\n        }\n       td {\n           border: 1px solid black;\n        }\n    </style>\n\n\n\n\n<div class=\"containerr\">\n\n    <div class=\"headerr\">\n\n        <h1 class=\"titlee\">INSTRUCTIONS:</h1>\n\n        <div class=\"headerr_content\">\n            <h1>A. Performance Rating: </h1>\n            <p>\n                When completing the appraisal form,  staff performance is to be rated  based on  degree of demonstrated abilities (1 - 5) on current role with comments supporting the ratings. All areas of listed behaviour and competencies are to be appraised by both the Appraiser and Appraisee.\n            </p>\n\n        </div>\n\n\n\n    </div>\n\n    <div class=\"content\">\n        <table>\n            <thead>\n            <tr>\n\n                <td>\n                 <h2>Unsatisfactory (1):</h2>\n                    <br>\n                    <p>\n                       The staff has failed to meet job objectives; performance not acceptable\n                    </p>\n\n\n                </td>\n\n\n                <td>\n                    <h2>Below Expectation (2):</h2>\n                    <br>\n                    <p>\n                       The staff has not fully met the required job objectives in the review period; areas of improvement needed </p>\n\n\n                </td>\n\n                <td>\n                    <h2>Met Expectation (3):</h2>\n                    <br>\n                    <p>The staff has consistently met the required job objectives as expected; full utilization of abilities to produce expected result </p>\n\n\n                </td>\n\n                <td>\n                    <h2>Exceed Expectation (4):</h2>\n                    <br>\n                    <p>The staff consistently meets and occasionally exceeds job objectives; performance well above competent level </p>\n\n\n                </td>\n\n                <td>\n                    <h2>Outstanding (5):</h2>\n                    <br>\n                    <p>The staff consistently exceeds job objectives; superior and exceptional performance in all aspects of job </p>\n\n\n                </td>\n\n\n\n            </tr>\n            </thead>\n        </table>\n    </div>\n\n\n\n</div>\n\n\n\n\n\n"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "PERFORMANCE OBJECTIVE"
+  },
+  {
+   "fieldname": "table_18",
+   "fieldtype": "Table",
+   "hidden": 1,
+   "options": "Appraisal Performance Objectives"
+  },
+  {
+   "fieldname": "section_break_19",
+   "fieldtype": "Section Break",
+   "hidden": 1
+  },
+  {
+   "fieldname": "appraisees_total_score_perf",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Appraisee's Total Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appraisers_total_score_perf",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "Appraiser's Total Score",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appraisers_total_score_perf_total_weight",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "fieldname": "performance_section",
+   "fieldtype": "Section Break",
+   "label": "CHARACTER"
+  },
+  {
+   "fieldname": "form_goal",
+   "fieldtype": "Table",
+   "options": "Appraisals Goal"
+  },
+  {
+   "fieldname": "section_break_28",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisees_total_score",
+   "fieldtype": "Float",
+   "label": "Appraisee's Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisers_total_score",
+   "fieldtype": "Float",
+   "label": "Appraisers Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appraisers_total_score_total_wei",
+   "fieldtype": "Int",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break0",
+   "fieldtype": "Section Break",
+   "label": "COMPETENCE",
+   "oldfieldtype": "Section Break"
+  },
+  {
+   "fieldname": "tab_competence",
+   "fieldtype": "Table",
+   "options": "Appraisals Goal Competence"
+  },
+  {
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisees_total_score_comp",
+   "fieldtype": "Float",
+   "label": "Appraisee's Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_36",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appraisers_total_score_comp",
+   "fieldtype": "Float",
+   "label": "Appraiser's Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appraisers_total_score_comp_total_weight",
+   "fieldtype": "Int",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break1",
+   "fieldtype": "Section Break",
+   "label": "CAPACITY"
+  },
+  {
+   "fieldname": "tab_capacity",
+   "fieldtype": "Table",
+   "options": "Appraisals Goal Capacity"
+  },
+  {
+   "fieldname": "section_break_40",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisess_total_score_capa",
+   "fieldtype": "Float",
+   "label": "Appraisees Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_42",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisers_total_score_capa",
+   "fieldtype": "Float",
+   "label": "Appraisers Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appraisers_total_score_capa_total_weight",
+   "fieldtype": "Int",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break_46",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "overall_score",
+   "fieldtype": "Data",
+   "label": "Overall Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_48",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "overal_score_in_percentage",
+   "fieldtype": "Data",
+   "label": "Overall Score in Percentage (%)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_50",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "summary_rating_section",
+   "fieldtype": "Section Break",
+   "label": "SUMMARY RATING"
+  },
+  {
+   "fieldname": "table_52",
+   "fieldtype": "Table",
+   "options": "Appraisals Summary Rating"
+  },
+  {
+   "fieldname": "overall_assessment_section",
+   "fieldtype": "Section Break",
+   "label": "OVERALL ASSESSMENT"
+  },
+  {
+   "fieldname": "summary_of_strength",
+   "fieldtype": "Small Text",
+   "label": "Summary of Strength",
+   "read_only": 1
+  },
+  {
+   "fieldname": "summary_of_areas_of_improvement",
+   "fieldtype": "Small Text",
+   "label": "Summary of Areas of Improvement",
+   "read_only": 1
+  },
+  {
+   "fieldname": "training_needs",
+   "fieldtype": "Small Text",
+   "label": "Training Needs",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appraisee_comment",
+   "fieldtype": "Small Text",
+   "label": "Appraisee's Comments",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appraiser_comment",
+   "fieldtype": "Small Text",
+   "label": "Appraiser's Comments",
+   "read_only": 1
+  },
+  {
+   "fieldname": "review_with_staff_section",
+   "fieldtype": "Section Break",
+   "label": "Review with Staff"
+  },
+  {
+   "fieldname": "appraisal_select",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "My Immediate superior and I have discussed my performance review",
+   "options": "\nI agree with the appraisal\nI disagree with the appraisal",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "appraisee_rejection_reason",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Appraisee's Rejection Reason"
+  },
+  {
+   "fieldname": "recommendations_section",
+   "fieldtype": "Section Break",
+   "label": "Recommendations"
+  },
+  {
+   "fieldname": "table_62",
+   "fieldtype": "Table",
+   "options": "Appraisals Recommendation"
+  },
+  {
+   "fieldname": "column_break_56",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Company",
+   "oldfieldname": "company",
+   "oldfieldtype": "Link",
+   "options": "Company",
+   "remember_last_selected_value": 1
+  },
+  {
+   "fieldname": "reporting_manager_email",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "fieldname": "notification_sent",
+   "fieldtype": "Int",
+   "hidden": 1
+  },
+  {
+   "fieldname": "appraisee_category",
+   "fieldtype": "Data",
+   "hidden": 1
+  },
+  {
+   "fieldname": "appraisals_template",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Appraisal Form Template",
+   "options": "Appraisals Template",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "goals_section",
+   "fieldtype": "Section Break",
+   "label": "GOALS"
+  },
+  {
+   "fieldname": "form_goal1",
+   "fieldtype": "Table",
+   "options": "Appraisal Goals"
+  },
+  {
+   "fieldname": "section_break_29",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appraisers_total_score_total_wei1",
+   "fieldtype": "Int",
+   "hidden": 1
+  },
+  {
+   "fieldname": "section_break_45",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_25",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisees_total_score1",
+   "fieldtype": "Float",
+   "label": "Appraisee's Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisers_total_score1",
+   "fieldtype": "Float",
+   "label": "Appraisers Total Score",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.branch",
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "ignore_user_permissions": 1,
+   "label": "Branch",
+   "options": "Branch",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.category",
+   "fieldname": "template",
+   "fieldtype": "Data",
+   "ignore_user_permissions": 1,
+   "label": "Template",
+   "read_only": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "grade",
+   "fieldtype": "Data",
+   "label": "Grade",
+   "read_only": 1
+  }
+ ],
+ "icon": "fa fa-thumbs-up",
+ "links": [],
+ "modified": "2022-03-31 14:08:33.955187",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Appraisals",
+ "name_case": "UPPER CASE",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "status, employee_number, employee_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "timeline_field": "employee",
+ "title_field": "employee_name",
+ "track_changes": 1
+}

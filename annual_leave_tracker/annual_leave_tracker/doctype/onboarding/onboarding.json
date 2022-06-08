@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "autoname": "HR-ONB-.YYYY.-.#####",
+ "creation": "2022-02-23 00:24:25.324421",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_name",
+  "date_of_joining",
+  "status",
+  "column_break_7",
+  "employee_onboarding_template",
+  "department",
+  "designation",
+  "employee_grade",
+  "table_for_task",
+  "total",
+  "column_break_11",
+  "completed",
+  "section_break_13",
+  "task"
+ ],
+ "fields": [
+  {
+   "fetch_from": "job_applicant.applicant_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date_of_joining",
+   "fieldtype": "Date",
+   "label": "Date of Joining"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "employee_onboarding_template",
+   "fieldtype": "Link",
+   "label": "Employee Onboarding Template",
+   "options": "Onboarding Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "employee_grade",
+   "fieldtype": "Link",
+   "label": "Employee Grade",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "table_for_task",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "label": "Completed"
+  },
+  {
+   "depends_on": "employee_onboarding_template",
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "employee_onboarding_template",
+   "fieldname": "task",
+   "fieldtype": "Table",
+   "label": "Task",
+   "options": "Onboarding Activity"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "New\nPending\nIn Process\nCompleted",
+   "read_only": 1
+  }
+ ],
+ "links": [],
+ "modified": "2022-03-14 11:43:36.445831",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Onboarding",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name",
+ "track_changes": 1
+}

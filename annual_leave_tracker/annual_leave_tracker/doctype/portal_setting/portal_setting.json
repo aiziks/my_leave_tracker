@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-04-04 13:55:55.016616",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "portal_name",
+  "column_break_2",
+  "portal_url",
+  "email"
+ ],
+ "fields": [
+  {
+   "fieldname": "portal_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Portal Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "portal_url",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Portal URL",
+   "reqd": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Link",
+   "label": "Default Sending Email",
+   "options": "Email Account"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2022-04-04 13:55:55.016616",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Portal Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

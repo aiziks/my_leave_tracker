@@ -1,0 +1,39 @@
+{
+ "actions": [],
+ "creation": "2021-11-06 19:38:35.456925",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "option_recommendations",
+  "remark_comment"
+ ],
+ "fields": [
+  {
+   "fieldname": "option_recommendations",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Option",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remark_comment",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remark/Comment",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-06 19:42:31.690131",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Appraisals Recommendation",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

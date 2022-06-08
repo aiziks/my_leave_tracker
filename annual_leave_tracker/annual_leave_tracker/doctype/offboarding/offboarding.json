@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "autoname": "HR-OFFB-.YYYY.-.#####",
+ "creation": "2022-02-27 16:48:07.131297",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "employee_offboarding_template",
+  "resignation_letter_date",
+  "status",
+  "column_break_7",
+  "offboarding_type",
+  "department",
+  "designation",
+  "employee_grade",
+  "table_for_task",
+  "total",
+  "column_break_11",
+  "completed",
+  "section_break_13",
+  "task",
+  "exit_interview_section",
+  "attach_file",
+  "interview_summary"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "employee.designation",
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "offboarding_type",
+   "fieldtype": "Select",
+   "label": "Offboarding Type",
+   "options": "\nResignation\nTermination",
+   "reqd": 1
+  },
+  {
+   "fetch_from": "employee.department",
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "employee_grade",
+   "fieldtype": "Link",
+   "label": "Employee Grade",
+   "options": "Employee Grade"
+  },
+  {
+   "fieldname": "table_for_task",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Int",
+   "label": "Total"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "completed",
+   "fieldtype": "Int",
+   "label": "Completed"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "depends_on": "employee_offboarding_template",
+   "fieldname": "task",
+   "fieldtype": "Table",
+   "label": "Task",
+   "options": "Offboarding Activity"
+  },
+  {
+   "allow_on_submit": 1,
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "New\nPending\nIn Process\nCompleted",
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_offboarding_template",
+   "fieldtype": "Link",
+   "label": "Employee Offboarding Template",
+   "options": "Offboarding Template",
+   "reqd": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "exit_interview_section",
+   "fieldtype": "Section Break",
+   "label": "Exit Interview"
+  },
+  {
+   "fieldname": "attach_file",
+   "fieldtype": "Attach",
+   "label": "Attach File"
+  },
+  {
+   "fieldname": "interview_summary",
+   "fieldtype": "Long Text",
+   "label": "Interview Summary"
+  },
+  {
+   "fieldname": "resignation_letter_date",
+   "fieldtype": "Date",
+   "label": "Resignation Letter Date"
+  }
+ ],
+ "links": [],
+ "modified": "2022-03-14 11:42:05.340727",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Offboarding",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name",
+ "track_changes": 1
+}

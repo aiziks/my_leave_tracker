@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "creation": "2021-11-08 00:45:29.858783",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "kra"
+ ],
+ "fields": [
+  {
+   "fieldname": "kra",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "KRA",
+   "reqd": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-08 00:45:29.858783",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Template Goal",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

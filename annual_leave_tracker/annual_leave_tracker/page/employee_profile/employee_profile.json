@@ -1,0 +1,22 @@
+{
+ "content": null,
+ "creation": "2021-10-03 17:05:26.017920",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2021-10-03 17:05:26.017920",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "employee-profile",
+ "owner": "Administrator",
+ "page_name": "Employee Profile",
+ "roles": [
+  {
+   "role": "Employee"
+  }
+ ],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 1
+}

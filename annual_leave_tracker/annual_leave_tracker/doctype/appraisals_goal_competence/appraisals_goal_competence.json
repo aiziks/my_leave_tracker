@@ -1,0 +1,91 @@
+{
+ "actions": [],
+ "creation": "2021-11-06 19:30:17.159146",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "aftg_behaviour_comp",
+  "section_break_1",
+  "performance_rating_comp",
+  "column_break_1",
+  "appraisees_rating",
+  "column_break_2",
+  "appraisers_rating",
+  "column_break_8",
+  "comments"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "aftg_behaviour_comp",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Behaviour",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "performance_rating_comp",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "in_list_view": 1,
+   "label": "Performance Rating ",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break",
+   "hidden": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisees_rating",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Appraisee's Rating (1-5)",
+   "options": "\n0\n1\n2\n3\n4\n5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "appraisers_rating",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Appraiser's Rating (1-5)",
+   "options": "\n0\n1\n2\n3\n4\n5",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Comments"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-06 19:30:17.159146",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Appraisals Goal Competence",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

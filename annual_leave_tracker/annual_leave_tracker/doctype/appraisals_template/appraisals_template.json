@@ -1,0 +1,118 @@
+{
+ "actions": [],
+ "autoname": "field:appraisal_template_title",
+ "creation": "2021-11-06 19:25:51.184110",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "appraisal_template_title",
+  "column_break_2",
+  "specify_employee_category",
+  "section_break_4",
+  "description",
+  "section_break_3",
+  "aft_behaviours",
+  "competence",
+  "capacity",
+  "summary_rating",
+  "recommendation"
+ ],
+ "fields": [
+  {
+   "fieldname": "appraisal_template_title",
+   "fieldtype": "Data",
+   "label": "Appraisal Template Title",
+   "unique": 1
+  },
+  {
+   "fieldname": "specify_employee_category",
+   "fieldtype": "Link",
+   "label": "Specify Employee Category",
+   "options": "Category"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "aft_behaviours",
+   "fieldtype": "Table",
+   "label": "Character",
+   "options": "Appraisals Template Goal"
+  },
+  {
+   "fieldname": "competence",
+   "fieldtype": "Table",
+   "label": "Competence",
+   "options": "Appraisals Template Goal Competence"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Table",
+   "label": "Capacity",
+   "options": "Appraisals Template Goal Capacity"
+  },
+  {
+   "fieldname": "summary_rating",
+   "fieldtype": "Table",
+   "label": "Summary Rating",
+   "options": "Appraisals Template Summary Rating"
+  },
+  {
+   "fieldname": "recommendation",
+   "fieldtype": "Table",
+   "label": "Recommendation",
+   "options": "Appraisals Template Recommendations"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "links": [],
+ "modified": "2022-03-17 13:30:06.666695",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Appraisals Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

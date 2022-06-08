@@ -1,0 +1,42 @@
+{
+ "actions": [],
+ "creation": "2022-02-23 00:07:30.805058",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "task",
+  "section_break_6",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Brief Description"
+  },
+  {
+   "fieldname": "task",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Task Name"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2022-02-23 00:57:20.322927",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Onboarding Template Activity",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "creation": "2021-09-26 23:55:24.812383",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "goal_name",
+  "goal_metric",
+  "goal_weight",
+  "goal_start",
+  "column_break_5",
+  "goal_due",
+  "goal_done",
+  "goal_state",
+  "goal_link",
+  "section_break_10",
+  "goal_bizx_actual",
+  "goal_bizx_pos",
+  "column_break_13",
+  "goal_bizx_strategic",
+  "goal_bizx_effort_spent",
+  "section_break_16",
+  "milestone_start",
+  "milestone_desc",
+  "milestone_due",
+  "section_break_20",
+  "task_desc",
+  "task_done",
+  "column_break_23",
+  "objcomment_comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "goal_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Goal name"
+  },
+  {
+   "fieldname": "goal_metric",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Goal metric"
+  },
+  {
+   "fieldname": "goal_weight",
+   "fieldtype": "Data",
+   "label": "Goal weight"
+  },
+  {
+   "fieldname": "goal_start",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Goal Start"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "goal_due",
+   "fieldtype": "Date",
+   "label": "Goal due"
+  },
+  {
+   "fieldname": "goal_done",
+   "fieldtype": "Data",
+   "label": "Goal done"
+  },
+  {
+   "fieldname": "goal_state",
+   "fieldtype": "Select",
+   "label": "Goal state",
+   "options": "\nCanceled\nIn progress\nCompleted\nNot Started"
+  },
+  {
+   "fieldname": "goal_link",
+   "fieldtype": "Data",
+   "label": "Goal link"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "goal_bizx_actual",
+   "fieldtype": "Data",
+   "label": "Goal bizx actual"
+  },
+  {
+   "fieldname": "goal_bizx_pos",
+   "fieldtype": "Data",
+   "label": "Goal bizx pos"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "goal_bizx_strategic",
+   "fieldtype": "Data",
+   "label": "Goal bizx strategic"
+  },
+  {
+   "fieldname": "goal_bizx_effort_spent",
+   "fieldtype": "Data",
+   "label": "Goal bizx effort spent"
+  },
+  {
+   "fieldname": "section_break_16",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "milestone_start",
+   "fieldtype": "Date",
+   "label": "Milestone start"
+  },
+  {
+   "fieldname": "milestone_desc",
+   "fieldtype": "Data",
+   "label": "Milestone desc"
+  },
+  {
+   "fieldname": "milestone_due",
+   "fieldtype": "Date",
+   "label": "Milestone due"
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "task_desc",
+   "fieldtype": "Data",
+   "label": "Task desc"
+  },
+  {
+   "fieldname": "task_done",
+   "fieldtype": "Data",
+   "label": "Task done"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "objcomment_comments",
+   "fieldtype": "Small Text",
+   "label": "Objcomment comments"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-10-12 12:01:58.098660",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Goal Template",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

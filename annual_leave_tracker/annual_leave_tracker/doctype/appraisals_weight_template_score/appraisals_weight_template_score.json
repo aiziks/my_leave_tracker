@@ -1,0 +1,38 @@
+{
+ "actions": [],
+ "creation": "2021-11-06 19:22:01.278768",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "awts_area",
+  "awts_weight"
+ ],
+ "fields": [
+  {
+   "fieldname": "awts_area",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area"
+  },
+  {
+   "fieldname": "awts_weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight (%)",
+   "precision": "2"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-06 19:22:01.278768",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Appraisals Weight Template Score",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

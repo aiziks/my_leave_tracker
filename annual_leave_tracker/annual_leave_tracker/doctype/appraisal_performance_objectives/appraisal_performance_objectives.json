@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "creation": "2021-11-06 19:03:34.303333",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "performance_objective_agreed_for_review_period",
+  "action_items",
+  "outcomes",
+  "appraisees_rating",
+  "appraisers_rating"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "performance_objective_agreed_for_review_period",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Performance Objective Agreed for Review Period",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "action_items",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Action Items",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "outcomes",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Outcomes",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "appraisees_rating",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Appraisee's Rating",
+   "options": "\n0\n1\n2\n3\n4\n5",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "appraisers_rating",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Appraiser's Rating",
+   "options": "\n0\n1\n2\n3\n4\n5",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-11 13:06:50.368158",
+ "modified_by": "Administrator",
+ "module": "Erp Generic",
+ "name": "Appraisal Performance Objectives",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
